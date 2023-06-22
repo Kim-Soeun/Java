@@ -20,6 +20,7 @@ public class 연산우선순위 {
 		
 		if (oper.equals("+")) {
 			num1++;					
+			num1++;					
 		} else if (oper.equals("-")) {
 			num1--;
 		}
