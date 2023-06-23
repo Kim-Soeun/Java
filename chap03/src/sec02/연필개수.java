@@ -17,12 +17,12 @@ public class 연필개수 {
 		
 		Scanner s = new Scanner(System.in);
 		System.out.println("학생수를 입력하세요");
-		int num1 = s.nextInt();
+		int student = s.nextInt();
 		System.out.println("연필 개수를 입력하세요");
-		int num2 = s.nextInt();
+		int pencil = s.nextInt();
 		
-		int result = num2 / num1;
-		int result2 = num2 % num1;
+		int result = pencil / student;
+		int result2 = pencil % student;
 		
 		System.out.printf("학생 한 명당 %d개씩 연필을 가져가고 %d개가 남아요\n", result, result2);
 //		System.out.println("학생 한 명당 " + result + "개씩 연필을 가져가고 " + result2 + "개가 남아요");

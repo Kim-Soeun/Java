@@ -21,7 +21,7 @@ public class ÁÂ¼®¼ö {
 		int i2 = num1 / num2;
 
 		int result1 = (i == 0) ? i2 :i2 + 1;
-		int result2 = (i ==0 ) ? i : num2 - i;
+		int result2 = (i == 0) ? i : num2 - i;
 		
 //		int result1 = (num1 % num2 == 0) ? num1 / num2 : num1 / num2 + 1; // ÃÑ ÁÙ ¼ö
 //		int result2 = (num1 % num2 == 0) ? num1 % num2 : num2 - num1 % num2; // ³²Àº ÇĞ»ı ¼ö
