@@ -10,10 +10,10 @@ public class 접속코드 {
 
 		Scanner s = new Scanner(System.in);
 		System.out.println("접속코드를 입력하세요");
-		String code = s.next();
+		String code = s.nextLine();
 		String user_name = code.substring(0, 3);
 		String num = code.substring(3);
-
+		
 		System.out.println("아이디: " );
 		String name = s.nextLine();
 		System.out.println("패스워드: " );

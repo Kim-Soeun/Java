@@ -6,20 +6,24 @@ public class 복습 {
 
 	public static void main(String[] args) {
 
-//		삼항 연산자를 사용하세요
-//		(조건) ? 값1 : 값2
-//		사용자로부터 근로시간을 입력받으세요
-//		1시간당 9620원 입니다
-//		만약 근로시간이 10시간 이상이면
-//		임금의 1.2배를 받습니다
-//		총 임금을 출력하세요(int로 출력)
+//		숫자를 입력하세요
+//		연산자를 입력하세요
+//		예) 숫자 5, 연산자 -   입력했으면 복합연산자를 이용하여
+//		100에서 5를 뺀 num1의 결과를 출력 num -=5
 		
 		Scanner s = new Scanner(System.in);
-		System.out.println("근로시간");
-		int time = s.nextInt();
-		double money = time * 9620;
+		System.out.println("숫자를 입력하세요");
+		int a = s.nextInt();
+		System.out.println("연산자를 입력하세요");
+		String b = s.next();
+		int num =100;
 		
-		double result = (time>=10) ? money : money*1.2;
-		System.out.println("총 임금 : " + (int)result);
-		}
+		if (b.equals("-")) { num -=a; }
+		if (b.equals("+")) { num +=a; }
+		if (b.equals("*")) { num *=a; }
+		if (b.equals("/")) { num /=a; }
+		
+		
+		
 	}
+}
