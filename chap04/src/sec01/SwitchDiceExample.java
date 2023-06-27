@@ -26,7 +26,7 @@ public class SwitchDiceExample {
 			break;
 		default:
 			System.out.println("6번이 나왔습니다");
-			break;
+			break; // 마지막 브레이크는 생략 가능
 
 		}
 	}
