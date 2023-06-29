@@ -6,20 +6,28 @@ public class 복습 {
 
 	public static void main(String[] args) {
 
-		//
-		//*
-		//**
-		//***
-		//****
-		//*****        총 6줄
+//		1~20 숫자 입력
+//		1~20 숫자 랜덤 지정
+//		사용자 숫자=컴퓨터 숫자  : "정답입니다"
+//		오답일 때는 힌트 주고 다시 입력
+
+		Scanner s = new Scanner(System.in);
 		
-		for (int i=1; i<=5; i++) {
-			for(int j=5; j>=i; j--) {
-				System.out.print("*");
+		int b = (int) (Math.random() * 20) + 1;
+
+		while (true) {
+			System.out.println("사용자 숫자 : ");
+			int a = s.nextInt();
+			if (a == b) {
+				System.out.println("정답");
+				break;
+			} else if (a > b) {
+				System.out.println("사용자 숫자가 더 큼");
+			} else {
+				System.out.println("사용자 숫자가 더 작음");
 			}
-			System.out.println( );		
 		}
-		
+
 	}
 
 }
