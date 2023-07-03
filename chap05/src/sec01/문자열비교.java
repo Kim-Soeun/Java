@@ -14,7 +14,7 @@ public class 문자열비교 {
 			System.out.println("두 데이터 참조가 달라요");
 		}
 		
-		
+
 		Scanner s = new Scanner(System.in);
 		String a = s.next();
 		String b = s.next();
