@@ -17,13 +17,13 @@ public class 확인문제6 {
 			System.out.println("------------------------");
 			System.out.print("선택> ");
 
-			int selectNo = s.nextInt(); 
+			int selectNo = s.nextInt();
 
 			if (selectNo == 1) {
 				// 입력받은 숫자만큼의 배열 생성
 
 				System.out.print("학생수> ");
-				studentNum = s.nextInt();  
+				studentNum = s.nextInt();
 				scores = new int[studentNum];
 			}
 
@@ -53,13 +53,8 @@ public class 확인문제6 {
 				avg = (double) sum / studentNum;
 				System.out.println("평균점수 : " + avg);
 
-			} else if (selectNo == 5) {
-				run = false;
 			}
+
 		}
-
-		System.out.println("프로그램 종료");
-
 	}
-
 }
