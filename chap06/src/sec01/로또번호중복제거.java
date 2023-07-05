@@ -13,6 +13,7 @@ public class 로또번호중복제거 {
 	for(int i=0; i<lotto.length; i++) {	  // 총 6개 숫자 추출
 			
 		num = (int)(Math.random()*45)+1;
+		
 		if (check[num]==false) {
 			lotto[i] = num;
 		}	else {
