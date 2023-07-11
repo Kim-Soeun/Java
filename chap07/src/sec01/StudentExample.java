@@ -8,7 +8,7 @@ public class StudentExample {
 //		자기 메소드 1개 호출
 //		부모 메소드 2개 호출  -> 결과 확인
 		
-		Student student = new Student(20231111, "여", 165);
+		Student student = new Student(50, 165, 12345);
 		
 		student.study("도서관");		// 자기 메소드 호출
 		

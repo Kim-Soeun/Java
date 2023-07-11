@@ -6,6 +6,12 @@ public class Human {
 	int height;		// 키
 	String gender;	//성별
 	
+	
+	Human(int weight, int height) {	  // 생성자
+		this.weight = weight;
+		this.height = height;
+	}
+	
 	void sleep() {System.out.println("잠이 듭니다");}
 	void awake() {System.out.println("일어납니다");}
 	
