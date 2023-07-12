@@ -25,7 +25,7 @@ public class Student extends Human {
 
 
 	@Override
-	String eat(String food) {
+	public String eat(String food) {
 		String result = food + "를 매일 먹습니다";
 		return result;
 	}

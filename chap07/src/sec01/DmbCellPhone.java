@@ -5,8 +5,7 @@ public class DmbCellPhone extends CellPhone {
 	int channel;
 
 	DmbCellPhone(String model, String color, int channel) {
-		this.model = model;		// 상속받은 필드
-		this.color = color;		// 상속받은 필드
+		super(model,color);		// 상속받은 필드
 		this.channel = channel;
 	}
 	

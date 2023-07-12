@@ -12,7 +12,7 @@ public class StudentExample {
 		
 		student.study("도서관");		// 자기 메소드 호출
 		
-		String result1 = student.eat("샌드위치");
+		String result1 = student.eat("샌드위치");  // 오버라이드 메소드
 		System.out.println(result1);
 		String result2 = student.run(20);		// 부모 메소드 2개 호출
 		System.out.println(result2);
