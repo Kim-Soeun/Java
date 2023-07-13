@@ -14,7 +14,7 @@ public class SportsCar extends Car {
 	
 	
 	public void stop(int x) {
-		// 리턴값이나 매개변수를 변경하면 메소드 오버라이드 x
+		// 리턴값이나 매개변수를 변경하면 메소드 오버로딩
 		System.out.println("스포츠카를 멈춤");
 		speed=0;
 	}

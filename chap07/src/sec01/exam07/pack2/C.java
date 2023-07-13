@@ -6,9 +6,9 @@ public class C {
 
 	public void method() {
 	// protected는 다른 패키지에서는 접근 불가능
-	A a = new A();
-	a.field = "value";
-	a.method();
+	// A a = new A();
+	// a.field = "value";
+	// a.method();
 	
 	}
 	
