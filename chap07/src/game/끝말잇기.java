@@ -29,7 +29,7 @@ public class 끝말잇기 {
 			}
 
 			for (int j = 0; j < playerNum; j++) {
-				if ((word[0].substring(0).equals("지"))) {
+				if ((word[0].substring(word[0].length() - 1).equals("지"))) {
 					if (word[j].substring(word[j].length() - 1).equals(word[j + 1].substring(0))) {
 
 					} else {
