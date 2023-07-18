@@ -1,6 +1,6 @@
 package sec01;
 
-public class Car {
+public class Car {		// 인스턴스 멤버 클래스
 
 	String company;
 	int speed;
@@ -24,7 +24,6 @@ public class Car {
 		OldCar oldcar = new OldCar();	// OldCar가 Car 클래스 내부에 있기 때문 
 		oldcar.speed = 50;
 	}
-	
 	
 	
 	

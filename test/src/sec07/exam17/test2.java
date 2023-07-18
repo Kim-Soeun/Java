@@ -1,4 +1,4 @@
-package test;
+package sec07.exam17;
 
 import java.util.Scanner;
 

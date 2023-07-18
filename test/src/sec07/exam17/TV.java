@@ -1,10 +1,10 @@
-package test;
+package sec07.exam17;
 
 public class TV {
 
-	String company;
-	int year;
-	int inch;
+	private String company;
+	private int year;
+	private int inch;
 	
 	
 	public TV(String company, int year, int inch) {

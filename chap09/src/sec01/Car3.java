@@ -1,6 +1,6 @@
 package sec01;
 
-public class Car3 {
+public class Car3 {		// 정적 멤버 클래스
 
 	String company;
 	int speed;
@@ -24,7 +24,6 @@ public class Car3 {
 		OldCar2 oldcar = new OldCar2();	// OldCar가 Car 클래스 내부에 있기 때문 
 		oldcar.speed = 50;
 	}
-	
 	
 	
 	
