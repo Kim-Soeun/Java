@@ -11,6 +11,8 @@ public abstract class Converter {
 	abstract protected String getDestString(); // 추상 메소드
 
 	protected double ratio; // 비율
+	
+
 
 	public void run() {
 		Scanner scanner = new Scanner(System.in);
@@ -19,7 +21,6 @@ public abstract class Converter {
 		double val = scanner.nextDouble();
 		double res = convert(val);
 		System.out.println("변환 결과: " + res + getDestString() + "입니다");
-		scanner.close();
 	}
 
 }

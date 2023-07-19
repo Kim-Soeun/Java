@@ -1,10 +1,8 @@
 package sec07.exam18;
 
-public class Add extends Calc {
+public class Mul extends Calc{
 
-	
-	
-	public Add(int a, int b) {
+	Mul(int a, int b) {
 		super(a,b);
 	}
 	
@@ -14,9 +12,8 @@ public class Add extends Calc {
 	}
 	
 	public int calculate() {
-		int result = a + b;
+		int result = a * b;
 		return result;
 	}
-
 	
 }

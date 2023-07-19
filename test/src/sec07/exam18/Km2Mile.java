@@ -1,9 +1,9 @@
 package sec07.exam18;
 
 
-public class Won2Dollar extends Converter {
-
-	public Won2Dollar(double ratio) {
+public class Km2Mile extends Converter {
+	
+	public Km2Mile(double ratio) {
 		this.ratio = ratio;
 	}
 	
@@ -13,11 +13,12 @@ public class Won2Dollar extends Converter {
 	}
 	
 	protected String getSrcString() {
-		return "¿ø";
+		return "Km";
 	}
 	
 	protected String getDestString() {
-		return "´Þ·¯";
+		return "Mile";
 	}
+
 	
 }

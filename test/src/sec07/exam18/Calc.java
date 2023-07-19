@@ -2,8 +2,8 @@ package sec07.exam18;
 
 public abstract class Calc {
 	
-	private int a;
-	private int b;
+	 int a;
+	 int b;
 	
 	
 	
@@ -13,7 +13,7 @@ public abstract class Calc {
 	}
 	
 	
-	public abstract void setValue();
-	public abstract void calculate();
+	public abstract void setValue(int a, int b);
+	public abstract int calculate();
 
 }
