@@ -2,7 +2,7 @@ package sec07.exam18;
 
 public class ColorTV extends TV {
 
-	int cost;
+	private int cost;
 	
 	
 	public ColorTV(int size, int cost) {

@@ -11,7 +11,8 @@ public class IPTV extends ColorTV{
 	}
 	
 	public void printProperty() {
-		System.out.println("IP林家 : " + address + ", "+ getSize() + "牢摹, " + cost + "父盔");
+		System.out.print("IP林家 : " + address + ", ");
+		super.printProperty();
 	}
 	
 	
