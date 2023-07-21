@@ -1,5 +1,6 @@
 package sec02;
 
+
 public class Car2 {
 	
 	// 필드값으로 익명 객체를 대입하세요
@@ -42,6 +43,7 @@ public class Car2 {
 		};
 		// speedDown() 메소드를 호출하면 익명 개체안의
 		// 메소드가 자동으로 실행되지 않음
+		// 그래서 아래 코드 필요함
 		downCar.stop();
 		
 	}

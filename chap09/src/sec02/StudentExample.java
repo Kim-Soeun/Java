@@ -1,5 +1,6 @@
 package sec02;
 
+
 public class StudentExample {
 
 	public static void main(String[] args) {
