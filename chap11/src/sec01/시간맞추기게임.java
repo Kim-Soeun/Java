@@ -38,11 +38,8 @@ public class 시간맞추기게임 {
 		}
 		
 		
-		if( times[0] > times[1] || times[1]>10) 
-			System.out.println("홍길동의 결과 " + times[0] + ", " + 
-		"장동건의 결과 " + times[1] + ", 승자는 홍길동");
+		if (Math.abs(10-times[0])<Math.abs(10-times[1])) 
+			System.out.println("홍길동이 이겼습니다");
 		else 
-			System.out.println("홍길동의 결과 " + times[0] + ", " + 
-		"장동건의 결과" + times[1] + ", 승자는 장동건");
-	}
-}
+			System.out.println("장동건이 이겼습니다");
+}}
