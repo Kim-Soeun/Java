@@ -9,6 +9,7 @@ public class BoxingExample {
 		Integer obj2 = new Integer("100");		// 매개값 : 문자열
 		Integer obj3 = Integer.valueOf("300");	// 생성자 이용 x, 포장 클래스에 있는 정적 메소드 valueOf() 사용
 		
+		
 		// Wrapper 클래스 언박싱(포장 해제)
 		int value1 = obj1.intValue();			// 다시 기본타입 얻기 위해 언박싱
 		int value2 = obj2.intValue();

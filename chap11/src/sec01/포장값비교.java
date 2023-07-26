@@ -7,9 +7,9 @@ public class 포장값비교 {
 		Integer obj1 = 300;
 		Integer obj2 = 300;
 		System.out.println("결과 : " + (obj1 == obj2));
-		// false 출력
+		// false 출력 : 객체가 다름
 		System.out.println("언박싱후 결과 : " + (obj1.intValue() == obj2.intValue()));
-		// true 출력
+		// true 출력 : 값이 같음
 		
 		
 		// Integer num1 = new Integer(100)    :  정식 박싱 코드

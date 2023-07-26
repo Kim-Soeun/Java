@@ -17,6 +17,7 @@ public class GradeExample {
 
 		System.out.println("평균은 " + me.average());
 		// average는 평균을 계산하여 리턴
+		
 
 	}
 

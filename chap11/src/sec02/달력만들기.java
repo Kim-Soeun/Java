@@ -24,26 +24,27 @@ public class 달력만들기 {
 		// 마지막 날짜를 입력한 달에서 1을 뺀 날짜로 세팅
 		
 		int dayweek = start.get(Calendar.DAY_OF_WEEK);
-		// 요일 번호 추출  :  일요일 1,  토요일 7
+		// start 1일의 요일 번호 추출  :  일요일 1,  토요일 7
 		
 		System.out.println();
 		System.out.println("========[" + month + "월]========");
 		System.out.println("  일 월 화  수  목  금  토");
 		
 		for(int i=1; i<dayweek; i++) {
-			System.out.print("  ");
+			System.out.print("   ");
 		}
 		// 요일 번호에 해당하는 만큼 공백 추가 (1자리에 3칸)
 		
 		
-		for(int i=1, j = dayweek; i<=end.get(Calendar.DATE); i++, j++) {
+		for(int i=1, j = dayweek; i<=end.DATE; i++, j++) {
 			System.out.printf("%3d", i);
-			// 정렬을 위해 3자리 맞춰서 날짜 출력(2자리는 날짜, 1자리는 사이 여백)
+			// 정렬을 위해 3자리 맞춰서 날짜 출력(2자리는 공백, 1자리는 날짜)
 			
-			if(j%7 == 0) {			// 요일 번호가 7 == 토요일일라면 줄 바꿈
+			if(j%7 == 0) {			   // 요일 번호가 7 == 토요일일라면 줄 바꿈
 				System.out.println();
 			}
 		}
+		
 	}
 
 }
