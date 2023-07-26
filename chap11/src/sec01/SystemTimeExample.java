@@ -6,7 +6,7 @@ public class SystemTimeExample {
 
 		
 		long time1 = System.nanoTime();
-		// 시작 시간(나노타임 : 10억분의 1초)
+		// 시작 시간(나노초 : 1/1000초)
 		
 		int sum = 0;
 		for(int i=1; i<=1000000; i++) {
