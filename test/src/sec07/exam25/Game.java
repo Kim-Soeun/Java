@@ -5,6 +5,12 @@ import java.util.Scanner;
 public class Game {
 
 	public static void main(String[] args) {
+		
+		// Scanner를 이용하여 한 라인을 읽고, 공백으로 분리된 어절이 몇 개 들어 있는지 
+		// "그만"을 입력할 때까지 반복하는 프로그램을 작성하세요.
+		// String 클래스의 split() 메소드를 이용하여 작성하세요.
+		
+		
 
 		Scanner s = new Scanner(System.in);
 		boolean run = true;
