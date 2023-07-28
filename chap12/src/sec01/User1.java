@@ -6,8 +6,8 @@ public class User1 extends Thread {
 	
 	
 	public void setCalculator(Calculator calculator) {
-		this.setName("User1");		// 스레드 이름을 User1으로 설정
-		this.calculator = calculator;
+		this.setName("User1");		  // 스레드 이름을 User1으로 설정
+		this.calculator = calculator; // 공유 객체인 Calculator를 필드에 저장
 	}
 
 	

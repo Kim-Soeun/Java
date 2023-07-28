@@ -13,7 +13,7 @@ public class BeepPrintExample2 {
 		Runnable beepTask = new BeepTask();
 		Thread thread = new Thread(beepTask);
 		thread.start();
-		// start() 메소드 호출해야 실행됨 
+		// start() 메소드 호출해야 작업스레드 실행됨 
 		
 		for(int i=0; i<5; i++) {
 			System.out.println("띵");
