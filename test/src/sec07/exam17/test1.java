@@ -3,7 +3,13 @@ package sec07.exam17;
 public class test1 {
 
 	public static void main(String[] args) {
-
+		
+		// 다음 2차원 배열을 출력하는 프로그램을 작성하시오.
+		// 1
+		// 123
+		// 1
+		// 1234
+		// 12
 		
 		int[][] num = {{1},{1,2,3},{1},{1,2,3,4},{1,2}};
 		

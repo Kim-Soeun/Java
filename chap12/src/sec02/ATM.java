@@ -2,7 +2,7 @@ package sec02;
 
 public class ATM implements Runnable {
 
-	private long depositeMoney = 100000;
+	private long depositMoney = 10000;
 
 	@Override
 	public void run() {
@@ -19,7 +19,7 @@ public class ATM implements Runnable {
 				} catch (InterruptedException e) {
 
 				}
-				if (getDepositeMoney() <= 0)
+				if (getDepositMoney() <= 0)
 					break;
 				withDraw(1000);
 			}
@@ -28,17 +28,17 @@ public class ATM implements Runnable {
 
 	
 	public void withDraw(long howMuch) {
-		if (getDepositeMoney() > 0) {
-			depositeMoney -= howMuch;
+		if (getDepositMoney() > 0) {
+			depositMoney -= howMuch;
 			System.out.print(Thread.currentThread().getName() + ", ");
-			System.out.printf("ภÜพื : %d ฟ๘ %n", getDepositeMoney());
+			System.out.printf("ภÜพื : %d ฟ๘ %n", getDepositMoney());
 		} else {
 			System.out.print(Thread.currentThread().getName() + ", ");
 		}
 	}
 
-	public long getDepositeMoney() {
-		return depositeMoney;
+	public long getDepositMoney() {
+		return depositMoney;
 	}
 
 }
