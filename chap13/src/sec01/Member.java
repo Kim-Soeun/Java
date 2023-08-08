@@ -24,7 +24,7 @@ public class Member {
 			Member member = (Member) obj;
 			return member.name.equals(name) && (member.age == age);
 		} else {
-			return false;
+			return false;  // true면 같은 객체라고 판단, false면 다른 객체라고 판단
 		}
 	}
 

@@ -14,6 +14,7 @@ public class ArrayListExample {
 		// 평균을 출력하는 프로그램을 작성하세요
 		
 		List<Character> list = new ArrayList<>();
+//		ArrayList list = new ArrayList<>();
 		Scanner s = new Scanner(System.in);
 		
 		System.out.println("학점을 6번 입력하세요");

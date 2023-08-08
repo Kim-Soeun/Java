@@ -21,9 +21,9 @@ public class HashSetExample {
 		set.add("아이바티스");
 		set.add("제이디비씨");			// 같은 데이터는 추가 안됨
 		
-		Iterator<String> iter = set.iterator();
-		while(iter.hasNext()) {
-			String element = iter.next();
+		Iterator<String> iter = set.iterator(); // HashSet을 Iterator 객체로 생성
+		while(iter.hasNext()) {					// 요소 하나씩 출력  hasNext : 다음요소가 존재하면 true, 아니면 false
+			String element = iter.next(); 		// 요소 하나 가져옴
 			System.out.println(element);
 		}
 		

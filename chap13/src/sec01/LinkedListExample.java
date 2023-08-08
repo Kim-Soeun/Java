@@ -9,7 +9,7 @@ public class LinkedListExample {
 	public static void main(String[] args) {
 		
 		// ArrayList와 LinkedList에 10,000개의 객체를 삽입하는 데
-		// 걸린 시간을 축정한 것
+		// 걸린 시간을 측정한 것
 		// 0번 인덱스에 String 객체를 10,000번 추가하기 위해 
 		// List 인터페이스의 add()메소드를 이용함
 		// 실행결과 LinkedList가 훨씬 빠른 성능 보임
