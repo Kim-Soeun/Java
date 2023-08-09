@@ -18,6 +18,7 @@ public class StudentExample {
 		Scanner s = new Scanner(System.in);
 		System.out.println("학생 이름, 학과, 학번, 학점평균 입력하세요");
 
+		// 정보 입력
 		for (int i = 0; i < student.length; i++) {
 			System.out.println(">> ");
 			String name = s.next();

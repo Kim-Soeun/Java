@@ -3,7 +3,7 @@ package sec01;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BoardDao {
+public class BoardDao {			// 581p 7¹ø ¹®Á¦
 
 	public List<Board2> getBoardList() {
 		

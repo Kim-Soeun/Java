@@ -1,6 +1,6 @@
 package sec01;
 
-public class Board2 {
+public class Board2 {			// 581p 7¹ø ¹®Á¦
 
 	private String title;
 	private String content;

@@ -2,7 +2,7 @@ package sec01;
 
 import java.util.*;
 
-public class LIstExample {
+public class LIstExample {		// 581p 7¹ø ¹®Á¦
 
 	public static void main(String[] args) {
 

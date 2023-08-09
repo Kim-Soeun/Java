@@ -22,17 +22,13 @@ public class HashSetExample {
 		set.add("아이바티스");
 		set.add("제이디비씨");			// 같은 데이터는 추가 안됨
 		
-		set.add("핫도그");
-		set.add("라면");
-		set.add("아이스크림");
-		set.add("아이스크림");
 		
 		
 		
 		Iterator<String> iter = set.iterator(); // HashSet을 Iterator 객체로 생성
 		while(iter.hasNext()) {					// 요소 하나씩 출력  hasNext : 다음요소가 존재하면 true, 아니면 false
 			String element = iter.next(); 		// 요소 하나 가져옴
-			System.out.println(element);
+			System.out.println(element);		// 출력할 때는 무작위 순서로 출력됨, 한 번 출력된 값 순서는 바뀌지 않음
 		}
 		
 		
