@@ -14,6 +14,7 @@ public class HashSetExample {
 		
 
 		Set<String> set = new HashSet<>();
+		Set<String> set2 = new HashSet<>();
 		
 		set.add("자바");
 		set.add("제이디비씨");
@@ -21,11 +22,24 @@ public class HashSetExample {
 		set.add("아이바티스");
 		set.add("제이디비씨");			// 같은 데이터는 추가 안됨
 		
+		set.add("핫도그");
+		set.add("라면");
+		set.add("아이스크림");
+		set.add("아이스크림");
+		
+		
+		
 		Iterator<String> iter = set.iterator(); // HashSet을 Iterator 객체로 생성
 		while(iter.hasNext()) {					// 요소 하나씩 출력  hasNext : 다음요소가 존재하면 true, 아니면 false
 			String element = iter.next(); 		// 요소 하나 가져옴
 			System.out.println(element);
 		}
+		
+		
+		// 주어진 코드를 실행하면, 요소들이 추가된 순서와는 무관하게 어떤 순서로 출력될지
+		// 정확히 예측 x
+		// Set 구현체에 따라 출력순서 달라질 수 있음
+		
 		
 		iter = set.iterator();		// 위와 같음
 		for(String element : set) {
