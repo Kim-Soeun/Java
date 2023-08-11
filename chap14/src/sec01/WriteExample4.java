@@ -8,16 +8,17 @@ public class WriteExample4 {
 
 	public static void main(String[] args) throws Exception {
 
-//		OutputStream os = new FileOutputStream("c:/temp/test2.db");
-//		
-//		
-//		byte[] array = {10,20,30};
-//		
-//		os.write(array);
-//		
-//		os.flush();
-//		os.close();
-		// temp 폴더에 test2 파일 만들어짐
+		/*
+		 * OutputStream os = new FileOutputStream("c:/temp/test2.db"); temp 폴더에 test2 파일
+		 * 만들어짐
+		 * 
+		 * byte[] array = {10,20,30};
+		 * 
+		 * os.write(array);
+		 * 
+		 * os.flush(); os.close();
+		 */
+		
 		
 		
 		OutputStream os = new FileOutputStream("c:/temp/test2.txt");

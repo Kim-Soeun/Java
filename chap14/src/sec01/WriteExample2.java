@@ -15,7 +15,7 @@ public class WriteExample2 {
 		}
 		
 		os.flush();
-		os.close();
+		os.close(); // 출력 스트림 닫음, OutputStream을 더 이상 사용하지 않겠다는 의미
 	}
 
 }
