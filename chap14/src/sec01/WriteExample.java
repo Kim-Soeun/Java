@@ -21,7 +21,7 @@ public class WriteExample {
 		os.write(b);
 		os.write(c);
 		
-		os.flush();			// 모든 바이트를 출력
+		os.flush();			// 모든 바이트를 출력(내부 버퍼에 잔류된 바이트를 모두 출력하는 역할)
 		os.close();			// 출력 스트림 닫기
 		
 	}

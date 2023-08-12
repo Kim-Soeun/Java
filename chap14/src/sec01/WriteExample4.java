@@ -9,8 +9,8 @@ public class WriteExample4 {
 	public static void main(String[] args) throws Exception {
 
 		/*
-		 * OutputStream os = new FileOutputStream("c:/temp/test2.db"); temp 폴더에 test2 파일
-		 * 만들어짐
+		 * OutputStream os = new FileOutputStream("c:/temp/test2.db"); 
+		 * temp 폴더에 test2 파일 만들어짐
 		 * 
 		 * byte[] array = {10,20,30};
 		 * 
@@ -27,8 +27,8 @@ public class WriteExample4 {
 		os.flush();
 		os.close();
 		
+	
 		// ABC 출력됨
-		
 		
 		
 		
