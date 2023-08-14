@@ -9,8 +9,10 @@ public class InputExample2 {
 
 		InputStream is = new FileInputStream("c:/temp/test1/db");
 		
+		
 		while(true) {
 			int data = is.read();
+			// test1 파일에 저장된 내용 1바이트씩 읽음
 			if(data==-1) break;
 			System.out.println(data);
 		}
