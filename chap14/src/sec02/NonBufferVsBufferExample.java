@@ -7,10 +7,12 @@ public class NonBufferVsBufferExample {
 	public static void main(String[] args) throws Exception {
 
 		String originalFilePath1 = NonBufferVsBufferExample.class.getResource("originalFile1.jpg").getPath();
-		// 그림파일 경로 끌어옴
+		// 그림파일 경로 끌어옴 : original파일 위치 나타냄
 		String targetFilePath1 = "c:/temp/targetFile1.jpg";
 		FileInputStream fis = new FileInputStream(originalFilePath1);
+		// original 파일 읽기 위한 스트림 생성
 		FileOutputStream fos = new FileOutputStream(targetFilePath1);
+		// 데이터를 targetFile에 쓰게 됨
 		
 		
 		String originalFilePath2 = NonBufferVsBufferExample.class.getResource("originalFile2.jpg").getPath();

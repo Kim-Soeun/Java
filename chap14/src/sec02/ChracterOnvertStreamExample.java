@@ -22,6 +22,7 @@ public class ChracterOnvertStreamExample {
 		FileOutputStream fos = new FileOutputStream("c:/temp/test1.txt");
 		Writer writer = new OutputStreamWriter(fos);
 		// FileOutputStream에 OutputStreamWriter 보조 스트림을 연결
+		// OutputStreamWriter : 바이트 스트림을 문자 스트림으로 변환하는 역할
 		
 		writer.write(str);
 		writer.flush();
@@ -36,6 +37,8 @@ public class ChracterOnvertStreamExample {
 		
 		char[] buffer = new char[100];
 		int readCharNum = reader.read(buffer);
+		// reader를 통해 파일에서 데이터를 읽어와서 buffer 배열에 저장하고
+		// 읽어온 데이터의 길이를 readCharNum에 저장
 		reader.close();
 		String data = new String(buffer,0,readCharNum);
 		// char 배열에서 읽은 수만큼 문자열로 변환

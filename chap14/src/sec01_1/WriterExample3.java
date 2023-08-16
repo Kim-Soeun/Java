@@ -31,7 +31,7 @@ public class WriterExample3 {
 		
 		
 		
-		// 
+		// 파일에 저장된 주소 콘솔창에 출력
 		Reader reader = new FileReader("c:/temp/address3.txt");
 		
 		char[] buffer = new char[5];

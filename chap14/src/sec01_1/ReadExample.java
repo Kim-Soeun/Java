@@ -8,6 +8,8 @@ public class ReadExample {
 	public static void main(String[] args) throws Exception {
 
 		Reader reader = new FileReader("c:/temp/test7.txt");
+		// 입력 스트림으로부터 한 개의 문자(2바이트)를 읽고 int타입(4바이트)로 리턴
+		// 리턴된 4바이트 중 끝에 있는 2바이트에 문자 데이터가 들어 있음
 		
 		while(true) {
 			int data = reader.read();
