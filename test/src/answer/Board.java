@@ -25,6 +25,8 @@ public static void main(String[] args) {
 	 * 
 	 */
 	new Board().start();
+	// Board board = new Board();
+	// board.start();
 }
 
 private void start() {
@@ -33,6 +35,7 @@ private void start() {
 		System.out.println("번호\t제목\t작성자\t작성일");
 		System.out.println("---------------------------------");
 		for(int i = boardTable.size() - 1; i >= 0 ; i--){
+		// 마지막 항목에서 첫 번째 항목까지 역순으로 반복, 가장 최근 게시판 항목이 먼저 표시됨
 			HashMap<String, Object> board = boardTable.get(i);
 			System.out.println(board.get("BOARD_NO")
 					+ "\t" + board.get("TITLE")
@@ -59,6 +62,7 @@ private void start() {
 	}
 }
 
+// 조회
 private void read() {
 	System.out.print("조회할 게시물 번호>");
 	int boardNo = ScanUtil.nextInt();
@@ -69,6 +73,8 @@ private void read() {
 			board = boardTable.get(i);
 		}
 	}
+	
+	
 	
 	System.out.println("=======================");
 	System.out.println("번호\t: " + board.get("BOARD_NO"));
@@ -98,6 +104,7 @@ private void read() {
 	}
 }
 
+// 삭제
 private void delete(HashMap<String, Object> board) {
 	System.out.print("정말 삭제 하시겠습니까?(Y/N)>");
 	String input = ScanUtil.nextLine();
@@ -115,6 +122,7 @@ private void delete(HashMap<String, Object> board) {
 	}
 }
 
+// 수정
 private void update(HashMap<String, Object> board) {
 	System.out.print("제목>");
 	board.put("TITLE", ScanUtil.nextLine());
@@ -124,6 +132,7 @@ private void update(HashMap<String, Object> board) {
 	System.out.println("게시글이 수정되었습니다.");
 }
 
+// 등록
 private void insert() {
 	HashMap<String, Object> board = new HashMap<>();
 	
