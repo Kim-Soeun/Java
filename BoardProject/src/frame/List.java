@@ -11,21 +11,25 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class List extends JPanel implements ActionListener {
-
+	// 목록을 보여주는 화면
+	// ActionListener : 액션 이벤트를 처리하기 위한 인터페이스
+	
 	public Image background = new ImageIcon(List.class.getResource("../image/list.png")).getImage();
+	// 화면 이미지 설정
 	public JButton register;
+	// 버튼 설정
 	public JButton[] check = new JButton[3];
 
 	public List() {
-		setSize(640, 720);
-		setLayout(null);
-		setVisible(true);
+		setSize(640, 720);	// 화면 사이즈 설정
+		setLayout(null);    // 레이아웃 설정
+		setVisible(true);   // 화면 보이기 설정
 
 		register = new JButton();			  // 등록 버튼
-		register.setBounds(50, 625, 40, 40);
+		register.setBounds(50, 625, 40, 40);  // 버튼 위치, 크기 설정
 		register.setBorderPainted(false);     // 버튼 테두리 삭제
 		register.setContentAreaFilled(false); // 버튼 투명하게 설정
-		register.addActionListener(this); //
+		register.addActionListener(this);     // 버튼 이벤트 설정
 		register.setIcon(new ImageIcon(List.class.getResource("../image/register.png")));
 		add(register);
 

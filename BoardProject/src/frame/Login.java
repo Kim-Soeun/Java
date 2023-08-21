@@ -60,17 +60,17 @@ public class Login extends JPanel implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 
-		if (e.getSource() == loginbtn) { // 로그인 버튼 클릭하면 로그인 판넬 꺼짐
-			if (idField.getText().equals("soeunee")) {
+		if (e.getSource() == loginbtn) { 		// 아이디 일치
+			if (idField.getText().equals("soeunee")) {// 모두 일치
 				if (passField.getText().equals("1234")) {
 					setVisible(false);
-				} else {
+				} else {						// 아이디 일치 & 비밀번호 불일치
 					JOptionPane aa = new JOptionPane();
 					aa.showMessageDialog(null, "비밀번호가 올바르지 않습니다.");
 					passField.setText("");
 
 				}
-			} else {
+			} else {							// 모든 정보 불일치할 경우
 				JOptionPane aa = new JOptionPane();
 				aa.showMessageDialog(null, "아이디가 올바르지 않습니다.");
 				idField.setText("");

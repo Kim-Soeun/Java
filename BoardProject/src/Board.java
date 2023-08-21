@@ -1,4 +1,13 @@
-
+/*
+	 * ArrayList와 HashMap을 사용해 게시판 테이블을 만들고,
+	 * 조회, 등록, 수정, 삭제가 가능한 게시판을 만들어주세요.
+	 * 
+	 * 번호, 제목, 내용, 작성자, 작성일
+	 * 
+	 * 목록에서는 조회, 등록, 종료
+	 * 상세화면에서는 수정, 삭제, 목록
+	 * 
+	 */
 
 
 import java.text.SimpleDateFormat;
@@ -11,19 +20,12 @@ import e_oop.ScanUtil;
 public class Board {
 
 ArrayList<HashMap<String, Object>> boardTable = new ArrayList<>();
+// 정보 입력 위한 ArrayList & HashMap 설정
 SimpleDateFormat format = new SimpleDateFormat("yy-MM-dd");
+// 등록시 날짜 자동 설정
 
 public static void main(String[] args) {
-	/*
-	 * ArrayList와 HashMap을 사용해 게시판 테이블을 만들고,
-	 * 조회, 등록, 수정, 삭제가 가능한 게시판을 만들어주세요.
-	 * 
-	 * 번호, 제목, 내용, 작성자, 작성일
-	 * 
-	 * 목록에서는 조회, 등록, 종료
-	 * 상세화면에서는 수정, 삭제, 목록
-	 * 
-	 */
+	
 	new Board().start();
 	// Board board = new Board();
 	// board.start();
@@ -36,6 +38,7 @@ private void start() {
 		System.out.println("---------------------------------");
 		for(int i = boardTable.size() - 1; i >= 0 ; i--){
 		// 마지막 항목에서 첫 번째 항목까지 역순으로 반복, 가장 최근 게시판 항목이 먼저 표시됨
+			
 			HashMap<String, Object> board = boardTable.get(i);
 			System.out.println(board.get("BOARD_NO")
 					+ "\t" + board.get("TITLE")
@@ -136,13 +139,14 @@ private void update(HashMap<String, Object> board) {
 private void insert() {
 	HashMap<String, Object> board = new HashMap<>();
 	
+	// 번호 설정
 	int max = 0;
 	for(int i = 0; i < boardTable.size(); i++){
 		if(max < (int)boardTable.get(i).get("BOARD_NO")){
 			max = (int)boardTable.get(i).get("BOARD_NO");
 		}
 	}
-	
+	// 게시글 등록
 	board.put("BOARD_NO", max + 1);
 	System.out.print("제목>");
 	board.put("TITLE", ScanUtil.nextLine());
